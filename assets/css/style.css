@@ -18,4 +18,24 @@
   font-style: normal;
 }
 
+ .fade-slowly {
+      opacity: 0;
+      transition: opacity 2s ease-out;
 
+ }
+
+ .fade {
+      opacity: 0;
+      transition: opacity 1s ease-out;
+
+ }
+
+ #welcomeMessage{
+  font-family:'Amarante', Arial, Helvetica, sans-serif;
+  display:flex;
+  padding-top: 2em;
+  font-size: large;
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+ }
