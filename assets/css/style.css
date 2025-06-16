@@ -1,0 +1,21 @@
+/* Google font*/
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Tangerine:wght@400;700&display=swap');
+
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+.amarante-regular {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
