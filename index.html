@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,30 +22,48 @@
 
     <title>Unlock Scandinavia One Question at a Time!</title>
 </head>
+
 <body>
-    
-    <h1> Unlock Scandinavia </h1>
-    <img  src="assets/images/pexels-aleksmagnusson-3441193.jpg" alt="An escalator at Stockholm center station imags" width="100%" height="200" id="heroImage">
+
+    <h1><i>Unlock scandinavia</i></h1>
+    <img src="assets/images/pexels-aleksmagnusson-3441193.jpg" alt="An escalator at Stockholm center station imags"
+        width="100%" height="200" id="heroImage">
 
     <p><strong>Ready to explore Scandinavia?</strong> Dive into our fun, bite-sized quiz!
-         Answer simple questions about Scandinavian, with only three choices per question, Start your journey</p>
-  
-     <!--Welcome message to the user, the whole container  will disappeared after the user submit their name  -->
+        Answer simple questions about Scandinavian, with only three choices per question, Start your journey</p>
+    <br>
+
+    <!--Welcome message to the user, the whole container  will disappeared after the user submit their name-->
     <div id="messageContainer">
         <input type="text" id="userName" placeholder="Enter your name" required>
         <button onclick="showWelcome()" id="btn-message">Enter</button>
         <!-- A welcome message will appear through JavaScript code-->
         <div id="welcomeMessage"></div>
     </div>
-    
+    <br>
+    <!--Quiz code-->
+    <div class="container">
+        <div id="wrapper">
+            <div id="question">
+                <button id="answer0" onclick="checkAnwer(0)"></button>
+                <button id="answer0" onclick="checkAnwer(1)"></button>
+                <button id="answer0" onclick="checkAnwer(2)"></button>
+                <br>
+                <br>
+                <hr>
 
 
-    
+            </div>
+            <!--Score code-->
+            <p>correct answer: <span id="correctScore">0</span></p>
+            <p>incorrect answer: <span id="incorrectScore">0</span></p>
+            <p>Total score: %<span id="score"></span></p>
 
-
-          
+        </div>
+    </div>
 
     <!--JavaScript source -->
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
