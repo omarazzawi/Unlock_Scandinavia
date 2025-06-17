@@ -18,7 +18,7 @@ function welcomeUser(){
         return;
     };
 
-    const message = `Welcome ${name} The quiz is short, like summer here ,
+    const message = `Welcome ${name},  The quiz is short, like summer here ,
       Skål!(That's "cheers" with a side of kanelbullar!) `;
 
     const newClass = document.getElementById("welcomeMessage");
@@ -51,11 +51,65 @@ function welcomeUser(){
 
 
 // An array of questions.
-/*const questions =[ 
+const questions =[ 
 
     {
-        "question":"What",
-        "answers":[] ,
-        "correct": 
+        "question":"1: We all love IKEA, but which country was it founded in?",
+        "answers":['Denmark' ,'Sweden' , 'Finland'] ,
+        "correct": 1
     },
-]*/
+
+    {
+        "question":"2: I'm a country often confused for a Scandinavian one, but I don't truly belong. Who am I?",
+        "answers":['Denmark' ,'Sweden' , 'Finland'] ,
+        "correct": 2
+    },
+
+    {
+        "question":"3: What is the capital of Norway ?",
+        "answers":['Oslo' ,'Helsinki' , 'Copenhagen'] ,
+        "correct": 0
+    },
+
+    {
+        "question":"4: Which Scandinavian capital city is famously spread across numerous islands, all connected to each other ?",
+        "answers":['Copenhagen' ,'Stockholm' , 'Oslo'] ,
+        "correct": 1
+    },
+
+    {
+        "question":"5: Which Scandinavian capital city is famously spread across numerous islands, all connected to each other ?",
+        "answers":['Copenhagen' ,'Stockholm' , 'Oslo'] ,
+        "correct": 1
+    },
+
+    {
+        "question":"6: which is the largest coffee chain in the  Scandinavian countries. ?",
+        "answers":['Starbucks' ,"Wayne's Coffee" , 'Espresso House'] ,
+        "correct": 1
+    },
+
+    {
+        "question":"7: Alright, alright, we get it, you're amazing at recycling, Scandinavia! But which one of you is the best, the absolute king of the compost bin??",
+        "answers":['Denmark' ,'Sweden' , 'Norway'] ,
+        "correct": 1
+    },
+
+    {
+        "question":" 8: Which Danish store is basically IKEA, but with a different accent?",
+        "answers":['JYSK' ,'MIO' , 'ILVA'] ,
+        "correct": 0
+    },
+
+    {
+        "question":" 9: Mads Mikkelsen, the man who can make even eating a liver look sophisticated (and terrifying!) in Hannibal,but which mysterious land did he emerge from?",
+        "answers":['Denmark' ,'Sweden' , 'Norway'] ,
+        "correct": 0
+    },
+
+    {
+        "question":" 10: Its capital is a modern art hub ?",
+        "answers":['Denmark' ,'Sweden' , 'Norway'] ,
+        "correct": 2
+    },
+]
