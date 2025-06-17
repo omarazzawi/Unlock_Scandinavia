@@ -1,9 +1,9 @@
 //Direct Field Access
 const proxy = document.getElementById("proxy");
 const question = document.getElementById("question");
-const answer0 = document.getElementById("answer0");
-const answer1 = document.getElementById("answer1");
-const answer2 = document.getElementById("answer2");
+const fristAnswer = document.getElementById("answer0");
+const secorndAnswer = document.getElementById("answer1");
+const thirdanswer = document.getElementById("answer2");
 
 
 
@@ -51,7 +51,7 @@ function welcomeUser(){
 
 
 // An array of questions.
-const questions =[ 
+const questions = [ 
 
     {
         "question":"1: We all love IKEA, but which country was it founded in?",
@@ -113,3 +113,38 @@ const questions =[
         "correct": 2
     },
 ]
+
+/**
+ * Loads a question into the display.
+ */
+ 
+
+function loadQustion (){
+    question.innerText = questions[0].question;
+
+
+}
+
+/**
+ * Loads a Answers into the display.
+ */
+
+function loadAnswers () {
+    fristAnswer.innerHTML = questions[0].answers[0];
+    secorndAnswer.innerText = questions[0].answers[1];
+    thirdanswer.innerText = questions[0].answers[2];
+
+}
+
+
+
+function quizProxy(){
+    loadQustion();
+    loadAnswers();
+}
+    
+
+
+
+
+quizProxy();
