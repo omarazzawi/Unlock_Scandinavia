@@ -7,24 +7,16 @@ const answer2 = document.getElementById("answer2");
 
 
 
-
-
-// An array of questions.
-/*const questions =[ 
-
-    {
-        "question":"",
-        "answers":[] ,
-        "correct": 
-    },
-]*/
-
-
-/**This function task is to fade the message container slowly
- * 
+/**designed to create a personalized welcome message for 
+ * a user and then gradually fade out the welcome elements. 
  */
 function welcomeUser(){
     const name = document.getElementById("userName").value.trim();
+     
+    if(name ===""){
+        alert("Please inter your name :)")
+        return;
+    };
 
     const message = `Welcome ${name} The quiz is short, like summer here ,
       Skål!(That's "cheers" with a side of kanelbullar!) `;
@@ -57,3 +49,13 @@ function welcomeUser(){
 
 }
 
+
+// An array of questions.
+/*const questions =[ 
+
+    {
+        "question":"What",
+        "answers":[] ,
+        "correct": 
+    },
+]*/
