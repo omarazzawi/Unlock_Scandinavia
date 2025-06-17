@@ -114,15 +114,16 @@ const questions = [
     },
 ]
 
+
+
+let questionNumber = 0;
+
 /**
  * Loads a question into the display.
  */
- 
 
 function loadQustion (){
-    question.innerText = questions[0].question;
-
-
+    question.innerText = questions[questionNumber].question;
 }
 
 /**
@@ -130,9 +131,10 @@ function loadQustion (){
  */
 
 function loadAnswers () {
-    fristAnswer.innerHTML = questions[0].answers[0];
-    secorndAnswer.innerText = questions[0].answers[1];
-    thirdanswer.innerText = questions[0].answers[2];
+
+    fristAnswer.innerHTML = questions[questionNumber].answers[0];
+    secorndAnswer.innerText = questions[questionNumber].answers[1];
+    thirdanswer.innerText = questions[questionNumber].answers[2];
 
 }
 
@@ -142,9 +144,17 @@ function quizProxy(){
     loadQustion();
     loadAnswers();
 }
-    
+
+const correctScore = document.getElementById("corretScore");
+const inCorrectScore = document.getElementById("inCorretScore");
 
 
+function checkAnwer (selectedAnswer){
+    correctAnswer = questions[questionNumber].correct;
+    if (selectedAnswer === correctAnswer){
+        console.log('high five');
 
+    }
+}
 
 quizProxy();
