@@ -114,45 +114,46 @@ const questions = [
     },
 ]
 
-
-
-let questionNumber = 0;
-
 /**
- * Loads a question into the display.
+ * Triggers the functions responsible for loading both questions and answers.
  */
+function quizProxy(){
 
-function loadQustion (){
+    let questionNumber = 0;
+
+    /**
+     * Loads a question into the display.
+     */
+    function loadQustion (){
+
     question.innerText = questions[questionNumber].question;
-}
 
-/**
- * Loads a Answers into the display.
- */
+    }
 
-function loadAnswers () {
+    /**
+     * Loads a Answers into the display.
+     */
+
+    function loadAnswers () {
 
     fristAnswer.innerHTML = questions[questionNumber].answers[0];
     secorndAnswer.innerText = questions[questionNumber].answers[1];
     thirdanswer.innerText = questions[questionNumber].answers[2];
 
+    }
+
 }
 
 
-
-function quizProxy(){
-    loadQustion();
-    loadAnswers();
-}
-
-const correctScore = document.getElementById("corretScore");
-const inCorrectScore = document.getElementById("inCorretScore");
-
+let correctScoreAmount = 0;
+let inCorrectScorAmount = 0;
 
 function checkAnwer (selectedAnswer){
     correctAnswer = questions[questionNumber].correct;
     if (selectedAnswer === correctAnswer){
         console.log('high five');
+        correctScoreAmount ++;
+        document.getElementById("correctScore").innerText = correctScoreAmount;
 
     }
 }
