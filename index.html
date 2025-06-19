@@ -28,7 +28,7 @@
     <h1>unlock scandinavia</h1>
     <!--Hero image-->
     <img src="assets/images/StockholmMetroStation.jpg" alt="An escalator at Stockholm central station image"
-        width="100%" height="200" id="heroImage">
+        width="100%" id="heroImage">
 
     <div class="introdation">
         <p> <strong>Ready to explore Scandinavia?</strong> Dive into our fun, bite-sized quiz!
@@ -39,11 +39,12 @@
     <br>
 
     <!--Welcome message area , the whole container  will disappeared after the user submit their name-->
+    
     <div id="messageContainer">
         <div id="userNameSubmission">
             <!--The space between the placeholder to center text-->
-            <input type="text" id="userName" placeholder="         Enter your name" required>
-            <button onclick="welcomeUser()" id="btn-message">Submit</button>
+            <input type="text" name="userName" id="userName" placeholder="         Enter your name" required>
+            <button onclick="welcomeUser()"  id = "btn-message">Submit</button>
         </div>
         <!-- A welcome message will appear through JavaScript code-->
         <div id="welcomeMessage"></div>
@@ -62,7 +63,6 @@
             </div>
     
             <br>
-            <br>
             <hr>
     
         </div>
@@ -73,9 +73,9 @@
             <span  id="inCorrectScore"> 0 </span> <i class="fa-solid fa-circle-xmark"></i>
             <br>
             <br>
-            <br>
-            <br>
-            <span class="copyRight">copyright <i class="fa-solid fa-copyright"></i> omar al-azzawi</span>
+        </div>
+        <div class="copyRight">
+            <p>copyright <i class="fa-solid fa-copyright"></i> omar al-azzawi</p>
         </div>
         </div>
 

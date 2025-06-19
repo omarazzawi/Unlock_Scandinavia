@@ -22,7 +22,7 @@ function welcomeUser(){
     document.getElementById("answer2").disabled = false;
 
     const message = `Welcome ${name},  The quiz is short, like summer here ,
-      Skål!(That's "cheers" with a side of kanelbullar!) `;
+      Skål!(That's "cheers" with a side of kanelbullar) `;
 
     const newClass = document.getElementById("welcomeMessage");
 
