@@ -26,42 +26,58 @@
 <body>
 
     <h1>unlock scandinavia</h1>
+    <!--Hero image-->
     <img src="assets/images/StockholmMetroStation.jpg" alt="An escalator at Stockholm central station image"
         width="100%" height="200" id="heroImage">
 
-    <p class="introdation"><strong>Ready to explore Scandinavia?</strong> Dive into our fun, bite-sized quiz!
-        Answer simple questions about Scandinavian, with only three choices per question, Start your journey!</p>
+    <div class="introdation">
+        <p> <strong>Ready to explore Scandinavia?</strong> Dive into our fun, bite-sized quiz!
+            Answer simple questions about Scandinavian, with only three choices per question,
+            <i>submit your name</i> & Start your journey!
+        </p>
+    </div>
     <br>
 
-    <!--Welcome message to the user, the whole container  will disappeared after the user submit their name-->
+    <!--Welcome message area , the whole container  will disappeared after the user submit their name-->
     <div id="messageContainer">
-        <input type="text" id="userName" placeholder="Enter your name" required>
-        <button onclick="welcomeUser()" id="btn-message">Submit</button>
+        <div id="userNameSubmission">
+            <!--The space between the placeholder to center text-->
+            <input type="text" id="userName" placeholder="         Enter your name" required>
+            <button onclick="welcomeUser()" id="btn-message">Submit</button>
+        </div>
         <!-- A welcome message will appear through JavaScript code-->
         <div id="welcomeMessage"></div>
     </div>
+
     <br>
-    <!--Quiz code-->
+    <!--Quiz area-->
     <div class="container">
         <div id="proxy">
             <div id="question"></div>
             <br>
-            <button id="answer0" onclick="checkAnswer(0)" disabled></button>
-            <button id="answer1" onclick="checkAnswer(1)" disabled></button>
-            <button id="answer2" onclick="checkAnswer(2)" disabled></button>
+            <div id="btn-style">
+                <button class="btn-answer" id="answer0" onclick="checkAnswer(0)" disabled></button>
+                <button class="btn-answer" id="answer1" onclick="checkAnswer(1)" disabled></button>
+                <button class="btn-answer" id="answer2" onclick="checkAnswer(2)" disabled></button>
+            </div>
+    
             <br>
             <br>
             <hr>
-            
+    
         </div>
         <br>
-        <!--Score code-->
-        <span class="score" id="correctScore"> 0</span> <i class="fa-solid fa-circle-check"></i>
-        <span class="score" id="inCorrectScore"> 0</span> <i class="fa-solid fa-circle-xmark"></i>
-        <br>
-        <br>
-        <span class="copyRight">copyright <i class="fa-solid fa-copyright"></i> omar al-azzawi</span>
-    </div>
+        <!--Score area-->
+        <div id="score">
+            <span  id="correctScore"> 0 </span> <i class="fa-solid fa-circle-check"></i>
+            <span  id="inCorrectScore"> 0 </span> <i class="fa-solid fa-circle-xmark"></i>
+            <br>
+            <br>
+            <br>
+            <br>
+            <span class="copyRight">copyright <i class="fa-solid fa-copyright"></i> omar al-azzawi</span>
+        </div>
+        </div>
 
     <!--JavaScript source -->
     <script src="assets/js/script.js"></script>

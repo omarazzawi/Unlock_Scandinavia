@@ -10,13 +10,16 @@ const thirdAnswer = document.getElementById("answer2");
 /**designed to create a personalized welcome message for 
  * a user and then gradually fade out the welcome elements. 
  */
+
 function welcomeUser(){
-    const name = document.getElementById("userName").value.trim();
-     
+    const name = document.getElementById("userName").value.trim();     
     if(name ===""){
         alert("Please inter your name :)")
         return;
     };
+    document.getElementById("answer0").disabled = false;
+    document.getElementById("answer1").disabled = false;
+    document.getElementById("answer2").disabled = false;
 
     const message = `Welcome ${name},  The quiz is short, like summer here ,
       Skål!(That's "cheers" with a side of kanelbullar!) `;
@@ -38,16 +41,23 @@ function welcomeUser(){
         document.getElementById("userName").classList.add('fade-slowly');
         newClass.classList.add('fade-slowly');
 
-    }, 3000);
+    }, 2000);
 
-    // Use a builtd-in faction to remove the whole elements after 5 secornd
+    // Use a builtd-in faction to remove the whole elements after 4 secornd
 
     setTimeout(()=>{
         document.getElementById("messageContainer").style.display = "none";
 
-    },5000);
+    },4000);
 
 }
+
+// Adds keyboard accessibility for users to submit forms by pressing Enter, providing an alternative to clicking.
+document.addEventListener("keydown", event=> {
+    if(event.key ==="Enter"){
+    welcomeUser();
+    }
+});
 
 
 // An array of questions.
@@ -55,7 +65,7 @@ const questions = [
 
     {
         "question":"1: We all love IKEA, but which country was it founded in?",
-        "answers":['Denmark' ,'Sweden' , 'Finland'] ,
+        "answers":['Denmark' ,'Sweden' , 'Norway'] ,
         "correct": 1
     },
 
@@ -85,7 +95,7 @@ const questions = [
 
     {
         "question":"6: which is the largest coffee chain in the  Scandinavian countries. ?",
-        "answers":['Starbucks' ,"Wayne's Coffee" , 'Espresso House'] ,
+        "answers":['Costa' ,"Wayne's" ,'Espresso House'] ,
         "correct": 2
     },
 
@@ -155,6 +165,10 @@ function quizTrigger(){
 let correctScoreAmount = 0;
 let inCorrectScorAmount = 0;
 
+/**
+ * To check the answer given by the user.
+ * @param {} selectedAnswer 
+ */
 
 function checkAnswer (selectedAnswer){
     correctAnswer = questions[questionNumber].correct;
@@ -175,12 +189,24 @@ function checkAnswer (selectedAnswer){
     quizTrigger();
 
 }
+
  
 quizTrigger();
 
-function endTheGame (){
-    proxy.innerText = ` ${correctScoreAmount} out of 10 That's not a score—it's a mystery wrapped in confusion. 🕵️♂️🎉 Want revenge or just a participation trophy?`    
-    
+
+/**
+ * This function to end the quiz.
+ */
+
+function endTheGame () {
+    proxy.innerHTML = ` ${correctScoreAmount} out of 10 , That's not a score—it's a 
+    mystery wrapped in confusion.🎉 Want revenge or just a participation trophy?
+    <br>
+    <br>
+    <button onclick ="window.location.reload()">Try again</button>
+    <hr>
+    `;
+
 }
 
 

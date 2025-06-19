@@ -1,41 +1,145 @@
 /* Google font*/
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Amarante&family=Coral+Pixels&family=Merienda:wght@300..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Smythe&family=Tangerine:wght@400;700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+/*Ganeral*/
 
-.tangerine-regular {
-  font-family: "Tangerine", cursive;
+body {
+background-color: #2A5091;
+color: whitesmoke;
+font-family:"Amarante", serif ;
+font-weight: 100;
+font-style: normal;
+
+}
+/* Style the heading*/
+
+h1{
+  font-family:'Smythe', sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: italic;
+  font-size: 40px;
+  text-align: center;
+  color:#bddcf5;
 }
 
-.tangerine-bold {
-  font-family: "Tangerine", cursive;
-  font-weight: 700;
-  font-style: normal;
+.introdation{
+  text-align: center;
 }
-.amarante-regular {
+
+
+
+/*Stlye the welcome area*/
+
+#userNameSubmission {
+  display: flex;
+  justify-content: center;
+}
+
+#userName {
+  background-color: whitesmoke;
+  border: none;
+
+}
+
+#btn-message{
+  background-color: #cbc8d1 ;
+  font-family: "Amarante", serif;
+  border: none;
+
+}
+
+#btn-message :hover {
+  background-color: #2A5091;
+
+}
+
+ #welcomeMessage{
   font-family: "Amarante", serif;
   font-weight: 400;
   font-style: normal;
+  font-size: large;
+  display:flex;
+  color: #cbae80;
+  padding-top: 2em;
 }
 
- .fade-slowly {
+.fade-slowly {
       opacity: 0;
       transition: opacity 2s ease-out;
+      
+}
 
- }
-
- .fade {
+.fade {
       opacity: 0;
       transition: opacity 1s ease-out;
 
  }
 
- #welcomeMessage{
-  font-family:'Amarante', Arial, Helvetica, sans-serif;
-  display:flex;
-  padding-top: 2em;
-  font-size: large;
-  font-family: "Tangerine", cursive;
-  font-weight: 700;
-  font-style: normal;
- }
+/*Style the Quiz area*/
+
+
+
+ /*This CSS block is designed to style interactive answer buttons, 
+ carefully selecting background and font colors to evoke the distinct national palettes of the Scandinavian countries 
+ (Denmark,, Sweden ,Norway). The aim is to create a visually cohesive and regionally 
+ representative user interface.IN most answers but not all*/
+
+#btn-style {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly
+
+}
+
+#answer0 { 
+  font-family: "Amarante", serif;
+  background-color:#C9072A;
+  color: #FFFFFF;
+
+}
+
+#answer1 { 
+  font-family: "Amarante", serif;
+  background-color: #005194;
+  color: #FECC00;
+  
+}
+
+#answer2 { 
+  font-family: "Amarante", serif;
+  background-color: #BB042B;
+  color:#001A5B;
+  font-weight: bold;
+  
+}
+
+
+
+/*Stlye the score area*/
+#score {
+  text-align: center;
+}
+
+#correctScore {
+  color: #04AA6D;
+}
+
+.fa-circle-check{
+  color: #04AA6D;
+}
+
+#inCorrectScore {
+  color: #ff0000;
+}
+.fa-circle-xmark{
+  color: #ff0000;
+  
+}
+.copyRight{
+
+  color:#5d8ecb;
+  font-size: medium;
+}
+
+
+
+
