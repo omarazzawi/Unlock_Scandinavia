@@ -14,9 +14,9 @@ const thirdAnswer = document.getElementById("answer2");
 function welcomeUser(){
     const name = document.getElementById("userName").value.trim();     
     if(name ===""){
-        alert("Please enter your name :)")
+        alert("Please enter your name :)");
         return;
-    };
+    }
     document.getElementById("answer0").disabled = false;
     document.getElementById("answer1").disabled = false;
     document.getElementById("answer2").disabled = false;
@@ -123,7 +123,7 @@ const questions = [
         "answers":['Denmark' ,'Sweden' , 'Norway'] ,
         "correct": 2
     },
-]
+];
 
 
 
@@ -180,7 +180,7 @@ function checkAnswer (selectedAnswer){
 
     } else {
         console.log("Sorry, it's not correct");
-        inCorrectScorAmount ++
+        inCorrectScorAmount ++;
         document.getElementById("inCorrectScore").innerHTML = inCorrectScorAmount;
 
     }
@@ -211,7 +211,6 @@ function endTheGame () {
     proxy.classList.add("endGame");
 
 }
-
 
 
 

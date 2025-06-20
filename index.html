@@ -29,7 +29,7 @@
     <!--Hero image-->
     <div class="imageContainer">
         <img src="assets/images/StockholmMetroStation.jpg" alt="An escalator at Stockholm central station image"
-            width="100%" id="heroImage">
+             id="heroImage">
     </div>
     <div class="introdation">
         <p> <strong>Ready to explore Scandinavia?</strong> Dive into our fun, bite-sized quiz!
@@ -46,7 +46,7 @@
             <button onclick="welcomeUser()"  id = "btn-message">Submit</button>
         </div>
         <!-- A welcome message will appear through JavaScript code-->
-        <div id="welcomeMessage"><h4></h4></div>
+        <div id="welcomeMessage"></div>
     </div>
 
     <br>
@@ -56,6 +56,7 @@
             <div id="question"></div>
             <br>
             <div id="btn-style">
+                <!-- Add disabled attribute to disable the buttons until the user provide their names-->
                 <button class="btn-answer" id="answer0" onclick="checkAnswer(0)" disabled></button>
                 <button class="btn-answer" id="answer1" onclick="checkAnswer(1)" disabled></button>
                 <button class="btn-answer" id="answer2" onclick="checkAnswer(2)" disabled></button>

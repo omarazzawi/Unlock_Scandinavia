@@ -241,7 +241,7 @@ h1 {
 }
 
 
-/** Media query larg screen (1440 and up) */
+/** Media query Large Desktops (1440 and up) */
 @media screen and (min-width: 1440px) {
 
   #heroImage {
@@ -276,6 +276,11 @@ h1 {
     
   }
 
+  #btn-style {
+   display: flex;
+  justify-content: center;
+  }
+
   #answer0 {
     font-size: 20px;
     height: 2.5em;
@@ -300,7 +305,7 @@ h1 {
 
 }
 
-/** Media query larg screen (2560 and up) */
+/** Media query XL Desktops/4K  (min-width: 2560px) */
 @media screen and (min-width: 2560px) {
 
   body {
