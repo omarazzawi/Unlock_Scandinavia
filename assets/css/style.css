@@ -84,7 +84,7 @@ h1 {
 /*Style the Quiz area*/
 
 #question {
-  height: 6vh;
+  height: 10vh;
 
 }
 
@@ -373,4 +373,5 @@ h1 {
   .copyRight {
     font-size: 30px;
   }
+
 }
