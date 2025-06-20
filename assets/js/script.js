@@ -14,7 +14,7 @@ const thirdAnswer = document.getElementById("answer2");
 function welcomeUser(){
     const name = document.getElementById("userName").value.trim();     
     if(name ===""){
-        alert("Please inter your name :)")
+        alert("Please enter your name :)")
         return;
     };
     document.getElementById("answer0").disabled = false;
@@ -23,6 +23,7 @@ function welcomeUser(){
 
     const message = `Welcome ${name},  The quiz is short, like summer here ,
       Skål!(That's "cheers" with a side of kanelbullar) `;
+    
 
     const newClass = document.getElementById("welcomeMessage");
 
@@ -34,7 +35,7 @@ function welcomeUser(){
 
     }, 500);
 
-    // Use a builtd-in  function to fade the button.
+    // Use a builtd-in  function to fade the user name.
 
     setTimeout(()=>{
         
@@ -203,9 +204,11 @@ function endTheGame () {
     mystery wrapped in confusion.🎉 Want revenge or just a participation trophy?
     <br>
     <br>
-    <button onclick ="window.location.reload()">Try again</button>
+    <button onclick ="window.location.reload()">Play Again</button>
     <hr>
     `;
+    //  Add a CSS class to indicate the quiz is complete, enabling end‑of‑game styling.
+    proxy.classList.add("endGame");
 
 }
 

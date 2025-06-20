@@ -27,9 +27,10 @@
 
     <h1>unlock scandinavia</h1>
     <!--Hero image-->
-    <img src="assets/images/StockholmMetroStation.jpg" alt="An escalator at Stockholm central station image"
-        width="100%" id="heroImage">
-
+    <div class="imageContainer">
+        <img src="assets/images/StockholmMetroStation.jpg" alt="An escalator at Stockholm central station image"
+            width="100%" id="heroImage">
+    </div>
     <div class="introdation">
         <p> <strong>Ready to explore Scandinavia?</strong> Dive into our fun, bite-sized quiz!
             Answer simple questions about Scandinavian, with only three choices per question,
@@ -39,7 +40,6 @@
     <br>
 
     <!--Welcome message area , the whole container  will disappeared after the user submit their name-->
-    
     <div id="messageContainer">
         <div id="userNameSubmission">
             <!--The space between the placeholder to center text-->
@@ -47,7 +47,7 @@
             <button onclick="welcomeUser()"  id = "btn-message">Submit</button>
         </div>
         <!-- A welcome message will appear through JavaScript code-->
-        <div id="welcomeMessage"></div>
+        <div id="welcomeMessage"><h4></h4></div>
     </div>
 
     <br>
@@ -61,23 +61,21 @@
                 <button class="btn-answer" id="answer1" onclick="checkAnswer(1)" disabled></button>
                 <button class="btn-answer" id="answer2" onclick="checkAnswer(2)" disabled></button>
             </div>
-    
-            <br>
-            <hr>
-    
         </div>
         <br>
+    
         <!--Score area-->
         <div id="score">
-            <span  id="correctScore"> 0 </span> <i class="fa-solid fa-circle-check"></i>
-            <span  id="inCorrectScore"> 0 </span> <i class="fa-solid fa-circle-xmark"></i>
+            <span id="correctScore"> 0 </span> <i class="fa-solid fa-circle-check"></i>
+            <span id="inCorrectScore"> 0 </span> <i class="fa-solid fa-circle-xmark"></i>
             <br>
             <br>
         </div>
+        <br>
         <div class="copyRight">
             <p>copyright <i class="fa-solid fa-copyright"></i> omar al-azzawi</p>
         </div>
-        </div>
+    </div>
 
     <!--JavaScript source -->
     <script src="assets/js/script.js"></script>
