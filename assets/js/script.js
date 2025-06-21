@@ -96,7 +96,7 @@ const questions = [
 
     {
         "question":"6: which is the largest coffee chain in the  Scandinavian countries. ?",
-        "answers":['Costa' ,"Wayne's" ,'Espresso House'] ,
+        "answers":['Costa' ,"Wayne's coffee" ,'Espresso House'] ,
         "correct": 2
     },
 
