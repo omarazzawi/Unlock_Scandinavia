@@ -196,7 +196,7 @@ quizTrigger();
 
 
 /**
- * This function to end the quiz.
+ * This function to end the quiz and reset it.
  */
 
 function endTheGame () {

@@ -28,7 +28,10 @@ h1 {
   text-align: center;
 }
 #heroImage{
+  display: flex;
+  justify-content: center;
   width: 100%;
+  
 }
 
 
@@ -178,10 +181,9 @@ h1 {
 
   #heroImage {
     height: 400px;
+      
   }
   
-
-
   #question {
 
     height: 4vh;
@@ -193,21 +195,20 @@ h1 {
 
   #answer0 {
 
-    width: 10em;
+    width: 8em;
 
   }
 
   #answer1 {
 
-    width: 10em;
+    width: 8em;
 
   }
 
   #answer2 {
 
-    width: 10em;
+    width: 8em;
   }
-
 
 }
 
@@ -221,21 +222,27 @@ h1 {
     width: 810px;
   }
 
+   #btn-style {
+   display: flex;
+  justify-content: center;
+  }
+
+
   #answer0 {
 
-    width: 13em;
+    width: 9em;
 
   }
 
   #answer1 {
 
-    width: 13em;
+    width: 9em;
 
   }
 
   #answer2 {
 
-    width: 13em;
+    width: 9em;
   }
 
 }
@@ -317,10 +324,17 @@ h1 {
   }
 
   #heroImage {
-    display: block;
     margin: 2px auto;
     height: 1100px;
+    width: 80%;
+
   }
+
+  .introdation {
+    max-width: 80%;
+
+
+}
 
   #userNameSubmission {
     height: 5em;
