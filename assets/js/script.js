@@ -11,12 +11,9 @@ const thirdAnswer = document.getElementById("answer2");
  * a user and then gradually fade out the welcome elements. 
  */
 
-function welcomeUser(){
+function welcomeUser(event){
+    event.preventDefault();
     const name = document.getElementById("userName").value.trim();     
-    if(name ===""){
-        alert("Please enter your name :)");
-        return;
-    }
     document.getElementById("answer0").disabled = false;
     document.getElementById("answer1").disabled = false;
     document.getElementById("answer2").disabled = false;
@@ -52,13 +49,6 @@ function welcomeUser(){
     },4000);
 
 }
-
-// Adds keyboard accessibility for users to submit forms by pressing Enter, providing an alternative to clicking.
-document.addEventListener("keydown", event=> {
-    if(event.key ==="Enter"){
-    welcomeUser();
-    }
-});
 
 
 // An array of questions.

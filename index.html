@@ -40,10 +40,10 @@
     <br>
     <!--Welcome message area , the whole container  will disappeared after the user submit their name-->
     <div id="messageContainer">
-        <form id="userNameSubmission">
+        <form id="userNameSubmission" onsubmit="welcomeUser(event)" >
             <!--The space between the placeholder to center text-->
             <input type="text" name="userName" id="userName" placeholder="         Enter your name" required>
-            <button type="button" onclick="welcomeUser()"  id = "btn-message">Submit</button>
+            <button type="submit" id = "btn-message" >Submit</button>
         </form>
         <!-- A welcome message will appear through JavaScript code-->
         <div id="welcomeMessage"></div>
