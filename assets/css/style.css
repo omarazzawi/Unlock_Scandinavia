@@ -13,6 +13,8 @@ body {
 
 }
 
+
+
 /* Style the heading*/
 
 h1 {
@@ -87,6 +89,8 @@ h1 {
 
 #question {
   height: 10vh;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
@@ -350,14 +354,8 @@ h1 {
     font-size: 30px;
   }
 
-  #btn-style {
-    display: flex;
-    justify-content: center;
-  }
-
    #question {
-    height: 6vh;
-    width: 1190px;
+    height: 6vh;  
     
   }
 
@@ -366,7 +364,6 @@ h1 {
     height: 2.5em;
     font-weight: bold;
   }
-
 
   #answer1 {
     font-size: 25px;

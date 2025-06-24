@@ -142,7 +142,7 @@ function checkAnswer (selectedAnswer){
  * This function to end the quiz and reset it.
  */
 function endTheGame () {
-    proxy.innerHTML = ` ${correctScoreAmount} out of 10 , That's not a score—it's a 
+    proxy.innerHTML = `You result is ${correctScoreAmount} out of 10 , That's not a score—it's a 
     mystery wrapped in confusion.🎉 Want revenge or just a participation trophy?
     <br>
     <br>
