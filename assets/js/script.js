@@ -52,9 +52,9 @@ const questions = [
         "correct": 0
     },
     {
-        "question":"4: Which Scandinavian capital city is famously spread across numerous islands, all connected to each other ?",
+        "question":"4: Originally a Viking fishing village established in the 10th century in the vicinity, did it evolve into a major trading port?",
         "answers":['Copenhagen' ,'Stockholm' , 'Oslo'] ,
-        "correct": 1
+        "correct": 0
     },
     {
         "question":"5: Which Scandinavian capital city is famously spread across numerous islands, all connected to each other ?",
@@ -126,11 +126,9 @@ function quizTrigger(){
 function checkAnswer (selectedAnswer){
     correctAnswer = questions[questionNumber].correct;
     if (selectedAnswer === correctAnswer){
-        console.log('high five');
         correctScoreAmount ++;
         document.getElementById("correctScore").innerText = correctScoreAmount;
     } else {
-        console.log("Sorry, it's not correct");
         inCorrectScorAmount ++;
         document.getElementById("inCorrectScore").innerHTML = inCorrectScorAmount;
     }
